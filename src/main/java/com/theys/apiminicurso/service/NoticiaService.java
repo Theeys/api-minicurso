@@ -24,4 +24,16 @@ public class NoticiaService {
     public void registrar(Noticia noticia) {
         noticiaRepository.save(noticia);
     }
+
+    public void registrar(List<Noticia> noticias) {
+        noticiaRepository.saveAll(noticias);
+    }
+
+    public void deletarTodos() {
+        noticiaRepository.deleteAll();
+    }
+
+    public void deletar(Integer id) {
+        noticiaRepository.deleteById(id);
+    }
 }

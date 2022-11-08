@@ -18,7 +18,7 @@ public class Noticia {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     public Integer id;
     @Column
-    public String nome;
+    public String titulo;
     @Column
     public String descricao;
     @Column
